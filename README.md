@@ -83,7 +83,7 @@ CPU：AMD Ryzen 7 4800H with Radeon Graphics 2.90 GHz
 ```bash
 git clone https://github.com/DeveloperSeohyun/boost_chat_room-based_on_jap-.git
 cd your-repo
-
+```
 
 画面：
 <img width="877" height="163" alt="ab9b8c24abc53b34ecab214efd27da4b" src="https://github.com/user-attachments/assets/00a0a583-a720-40f7-9d51-3a28c11ec349" />
@@ -92,7 +92,7 @@ cd your-repo
 ```bash
 cmake .
 make
-
+```
 
 <img width="775" height="435" alt="image" src="https://github.com/user-attachments/assets/b05f9db6-d3f2-4bce-92aa-ecfcec0f8696" />
 
@@ -118,7 +118,7 @@ ImageServer default port:23611
 クライアントのスタートは簡易だと思って、一言に尽きって、対応しているファルダをQT6以上バージョンで開けて、CMakeListsが完備なので、直接にRunやDebugのムードで起動することがうまくできるだと思います
 ``` cpp
 #define BASE_JAP
-
+```
 この言語を抜いてプロジェクトは中国語バージョンに戻ります。具体的な機能は不変なのに...
 
 
