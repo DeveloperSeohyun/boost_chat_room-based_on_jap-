@@ -72,6 +72,59 @@ CPU：AMD Ryzen 7 4800H with Radeon Graphics 2.90 GHz
 
 メモリ：16.0 GB（使用可能：15.4 GB）
 
+# どうやって動きますか?
+
+
+## サーバーを起動する
+### 手順1：プロジェクトをビルドする
+
+１－まず、以下のコマンドでリポジトリをローカルにクローンします：
+
+```bash
+git clone https://github.com/DeveloperSeohyun/boost_chat_room-based_on_jap-.git
+cd your-repo
+
+
+画面：
+<img width="877" height="163" alt="ab9b8c24abc53b34ecab214efd27da4b" src="https://github.com/user-attachments/assets/00a0a583-a720-40f7-9d51-3a28c11ec349" />
+
+２－次に、プロジェクトディレクトリ内で以下のコマンドを実行してビルドします：
+```bash
+cmake .
+make
+
+
+<img width="775" height="435" alt="image" src="https://github.com/user-attachments/assets/b05f9db6-d3f2-4bce-92aa-ecfcec0f8696" />
+
+もしビルドできなければ、是非もう一度開発環境を確認してください、特に
+boost.asio、boost.mysql、nlohmann/jsonなどのライブラリ持っていますか？バージョンとか最低より高くあるんですか？
+本コード倉庫の中で必要なライブラリすべて完備していないですが、自分自身で準備してください。
+
+### 手順2：サーバーをスタートする
+
+１－本プロジェクトはチャットシステムで、バックエンド側起動する必要があるサーバーが2つあります。
+ImageServer and MychatServer
+それぞれ起動するお願いします。
+<img width="782" height="160" alt="image" src="https://github.com/user-attachments/assets/68d38e7e-a39e-42fa-9837-239755e469c8" />
+サーバーを起動すると、デフォルトデータへのクエリが自動的に実行されます。サーバーから出力される情報に基づいて、データベースへの接続が正常かどうかを判断できます。
+
+起動できない時には、「port bind error」というエラーを確認してください、
+MychatServer default port:23610
+ImageServer default port:23611
+具体的な設定情報はetcフォルダ内の2つのファイルにありますので、サーバーのIPアドレスを更改するなどの必要な状況では応じて参照してください。
+
+## クライアントを起動する
+クライアントに関係するコードはこちらではなく、でも、クライアント起動するというのはサーバースタートに繋がるとおもうんですが、一応にこちらで説明しておきます。
+クライアントのスタートは簡易だと思って、一言に尽きって、対応しているファルダをQT6以上バージョンで開けて、CMakeListsが完備なので、直接にRunやDebugのムードで起動することがうまくできるだと思います
+``` cpp
+#define BASE_JAP
+
+この言語を抜いてプロジェクトは中国語バージョンに戻ります。具体的な機能は不変なのに...
+
+
+
+
+
 
 # 运行界面
 注册界面
