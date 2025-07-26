@@ -127,13 +127,15 @@ ImageServer default port:23611
 
 
 # 运行界面
-注册界面
 ログイン画面
-![image](https://github.com/user-attachments/assets/5718d504-819e-4868-a5ab-e11b1408c438)
+<img width="533" height="361" alt="image" src="https://github.com/user-attachments/assets/de01fe82-ba79-49d7-b4dd-e701436ef929" />
 
-服务器接受情况
-サーバーのバックエンドの受け入れ
-![image](https://github.com/user-attachments/assets/595d91c6-eaa8-4b81-acc8-1ba9c7856d1e)
+サーバーはログイン要求を受け入れて処理する状況
+<img width="740" height="236" alt="image" src="https://github.com/user-attachments/assets/93f4db70-9ab6-40c0-b3f2-5473e78aae93" />
+
+サインした後メイン画面
+<img width="976" height="651" alt="image" src="https://github.com/user-attachments/assets/c061d35f-977b-488a-9d61-2d7e2645b1fe" />
+
 
 好友添加
 友達を追加
