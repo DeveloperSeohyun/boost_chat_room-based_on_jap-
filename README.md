@@ -126,33 +126,45 @@ ImageServer default port:23611
 
 
 
-# 运行界面
-ログイン画面
-<img width="533" height="361" alt="image" src="https://github.com/user-attachments/assets/de01fe82-ba79-49d7-b4dd-e701436ef929" />
+# クライアントを紹介する
+こちらもクライアントの基本機能を紹介しています。あわせて、サーバー側のレスポンスもログとして出力し、添付いたします。
 
-サーバーはログイン要求を受け入れて処理する状況
-<img width="740" height="236" alt="image" src="https://github.com/user-attachments/assets/93f4db70-9ab6-40c0-b3f2-5473e78aae93" />
+## チャット関係
+
+ログイン機能
+<img width="561" height="383" alt="image" src="https://github.com/user-attachments/assets/010eff61-7f88-48e5-8551-df0d6dbd9762" />
+
+サーバーはログインリクエストを受け入れて処理する状況
+<img width="959" height="261" alt="image" src="https://github.com/user-attachments/assets/8cd4ab7f-d7d7-4166-bd5a-6632811270af" />
 
 サインした後メイン画面
-<img width="976" height="651" alt="image" src="https://github.com/user-attachments/assets/c061d35f-977b-488a-9d61-2d7e2645b1fe" />
+<img width="1141" height="684" alt="image" src="https://github.com/user-attachments/assets/9e7cff4f-409f-4865-8fe4-b7ea680ac254" />
+
+友だちとお互いにチャットする画面
+<img width="1036" height="672" alt="image" src="https://github.com/user-attachments/assets/18142df3-b0d7-45bc-bad4-3bfb9f74d7a7" />
+
+## ユーザー管理
+
+フレンドを探して申請する場合
+<img width="976" height="651" alt="image" src="https://github.com/user-attachments/assets/7098d4c2-353c-48a3-8db9-20e5978ca42d" />
+<img width="976" height="651" alt="image" src="https://github.com/user-attachments/assets/16023583-b969-4788-bcf3-389f817dfcbb" />
+<img width="976" height="651" alt="image" src="https://github.com/user-attachments/assets/d016cddf-f7fd-4cc1-9aa0-d1691e21a76d" />
+
+マイフレンドページ
+<img width="976" height="651" alt="image" src="https://github.com/user-attachments/assets/4e940434-fa57-4ba2-a7f7-615797d3a864" />
 
 
-好友添加
-友達を追加
-![image](https://github.com/user-attachments/assets/77025e9c-ac79-4e11-8907-58a6dbd4530c)
-![image](https://github.com/user-attachments/assets/c5cba34b-fa19-42f7-abc1-231268fc51b5)
-对方收到系统信息：
-![image](https://github.com/user-attachments/assets/9eca8275-a12a-415b-837a-6869d3356d0d)
+## サーバー側のデータベース関係すること
 
-
-正常通讯
-双方がお互いにメッセージを送信する
-![image](https://github.com/user-attachments/assets/70459117-b7df-483b-8d0d-b8ecedca9561)
-消息格式打包
 メッセージ形式のカプセル化
 ![image](https://github.com/user-attachments/assets/6e9f2286-97e9-4ba9-94be-4c537fdf3275)
 
+データベース内の主要なテーブル情報
+<img width="1121" height="249" alt="image" src="https://github.com/user-attachments/assets/062ff5d0-f3e9-46c2-bb08-659991fe1784" />
 
+メッセージ歴史保存
+<img width="1696" height="315" alt="image" src="https://github.com/user-attachments/assets/19a5bd5c-a0fb-4474-9686-6053bc2f745e" />
 
-
+本システムに関して簡単な説明は以上です。
+何か質問があれば是非ISSUESしてお願いいたします
 
