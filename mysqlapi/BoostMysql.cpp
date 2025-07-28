@@ -77,7 +77,6 @@ bool BoostMysql::CheckUserInfo(std::string &usr, std::string &pass)
 //std::any
 SqlResult BoostMysql::ExecSql(const std::string &sql)
 {
-    
     //example: select f_avatar_url from t_user where f_user_id = 1003; 
     std::cout<<sql<<std::endl;
     // 查找 "select " 和 " from" 之间的字符串，并因此进入不同逻辑
@@ -85,13 +84,9 @@ SqlResult BoostMysql::ExecSql(const std::string &sql)
     size_t endPos = sql.find(" from");
      // 提取字段名
     std::string field = sql.substr(startPos, endPos - startPos);
-
-    
     try {
-
         //release conn_.execute(sql, result_);
         conn_.execute(sql, result_);
-        
         // 根据字段名决定执行哪个逻辑
         if (field == "f_avatar_url") {
             // f_avatar_url 返回的是varchar，需as_string()
@@ -105,14 +100,10 @@ SqlResult BoostMysql::ExecSql(const std::string &sql)
         // 妹有相关处理逻辑
             std::cout << "Field not recognized" << std::endl;
         }
-        
-
     } catch (const boost::system::system_error& e) {
         std::cerr << "Error executing SQL: " << e.what() << std::endl;
     }
-
     return 0xFF;
-    
 }
 
 std::vector<FriendInfo> BoostMysql::GetFriends(int user_id)
