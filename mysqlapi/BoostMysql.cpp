@@ -75,6 +75,7 @@ bool BoostMysql::CheckUserInfo(std::string &usr, std::string &pass)
 }
 
 //std::any
+//using SqlResult = std::variant<int, std::string /* 将来的其他类型 */>;
 SqlResult BoostMysql::ExecSql(const std::string &sql)
 {
     //example: select f_avatar_url from t_user where f_user_id = 1003; 
